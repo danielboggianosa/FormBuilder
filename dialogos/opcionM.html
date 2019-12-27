@@ -1,0 +1,19 @@
+<label><h5>Opción Múltiple</h5></label>
+<input type="text" class="form-control" placeholder="Etiqueta" id="new_opcionM_tag" name="etiqueta">
+<label class="form-control">
+    <input type="checkbox" name="obligatorio" id="new_opcionM_req"> Obligatorio
+</label>
+<div id="new_opciones">
+    <input type="text" name="new_opcion_0" id="new_opcion_0" class="form-control" placeholder="Opción">
+</div>
+<button class="btn btn-info" id="new_opcion_add">
+    <i class="fa fa-plus"> Agregar Opción</i>
+</button>
+
+<script>
+    var i = 0;
+    $("#new_opcion_add").click(()=>{
+        i++;
+        $("#new_opciones").append('<input type="text" name="new_opcion_'+i+'" id="new_opcion_'+i+'" class="form-control" placeholder="Opción">');
+    });
+</script>

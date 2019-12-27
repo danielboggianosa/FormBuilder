@@ -1,0 +1,13 @@
+<div class="card">
+    <div class="card-header"></div>
+    <div class="card-body">
+        <input type="file" class="form-control">
+    </div>
+</div>
+<script>
+    $("#form_new_image_"+k+" .card-header").append('<span id="form_new_image_'+k+'_tag"></span>');
+    $("#form_new_image_"+k+" .card-header").append('<span id="form_new_image_'+k+'_req"></span>');
+    $("#form_new_image_"+k+" .card-header").append('<button class="float-right" id="form_new_image_'+k+'_close" onclick="Quitar(this.id)"><i class="fa fa-close"></i></button>');
+    $("#form_new_image_"+k+"_tag").html(tag);
+    $("#form_new_image_"+k+"_req").html(req);
+</script>

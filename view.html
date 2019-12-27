@@ -1,6 +1,6 @@
 <div class="container">
     <div class="row">
-        <div class="card alert col-sm-4" style="height: 500px;overflow-y: scroll;overflow-x: hidden;">
+        <div class="card alert col-md-4" style="height: 500px;overflow-y: scroll;overflow-x: hidden;">
             <h4>Campos</h4>
             <div class="card-header" ><b>Campos Predefinidos</b></div>
             <ul class="list-group list-group-flush" id="campos_predefinidos" style="cursor: pointer;">
@@ -23,7 +23,7 @@
                     <i class="fa fa-plus" id="btn_correo_btn"></i> Correo Electrónico
                 </li>
                 <li class="list-group-item" id="btn_cliente">
-                    <i class="fa fa-plus" id="btn_cliente_btn"></i> Cliente Movistar
+                    <i class="fa fa-plus" id="btn_cliente_btn"></i> ¿Eres Cliente Movistar?
                 </li>
                 <li class="list-group-item" id="btn_comunicacion">
                     <i class="fa fa-plus" id="btn_comunicacion_btn"></i> Recibir Comunicaciones
@@ -32,38 +32,45 @@
 
             <div class="card-header"><b>Campos Adicionales</b></div>
             <ul class="list-group list-group-flush" id="campos_adicionales" style="cursor: pointer;">
-                <li class="list-group-item" id="add_text">
-                    <i class="fa fa-plus" id="add_text_btn"></i> Respuesta Corta
+                <li class="list-group-item" id="new_text">
+                    <i class="fa fa-plus" id="new_text_btn"></i> Respuesta Corta
                 </li>
-                <li class="list-group-item" id="add_textarea">
-                    <i class="fa fa-plus" id="add_textarea_btn"></i> Respuesta Larga
+                <li class="list-group-item" id="new_textarea">
+                    <i class="fa fa-plus" id="new_textarea_btn"></i> Respuesta Larga
                 </li>
-                <li class="list-group-item" id="add_numero">
-                    <i class="fa fa-plus" id="add_numero_btn"></i> Número
+                <li class="list-group-item" id="new_number">
+                    <i class="fa fa-plus" id="new_number_btn"></i> Número
                 </li>
-                <li class="list-group-item" id="add_imagen">
-                    <i class="fa fa-plus" id="add_imagen_btn"></i> Imágen
+                <li class="list-group-item" id="new_image">
+                    <i class="fa fa-plus" id="new_image_btn"></i> Imagen
                 </li>
-                <li class="list-group-item" id="add_fecha">
-                    <i class="fa fa-plus" id="add_fecha_btn"></i> Fecha
+                <li class="list-group-item" id="new_fecha">
+                    <i class="fa fa-plus" id="new_fecha_btn"></i> Fecha
                 </li>
-                <li class="list-group-item" id="add_archivo">
-                    <i class="fa fa-plus" id="add_archivo_btn"></i> Archivo
+                <li class="list-group-item" id="new_archivo">
+                    <i class="fa fa-plus" id="new_archivo_btn"></i> Archivo
                 </li>
-                <li class="list-group-item" id="add_opcionU">
-                    <i class="fa fa-plus" id="add_opcionU_btn"></i> Opción única
+                <li class="list-group-item" id="new_opcionU">
+                    <i class="fa fa-plus" id="new_opcionU_btn"></i> Opción única
                 </li>
-                <li class="list-group-item" id="add_opcionM">
-                    <i class="fa fa-plus" id="add_opciónM_btn"></i> Opción multiple
+                <li class="list-group-item" id="new_opcionM">
+                    <i class="fa fa-plus" id="new_opciónM_btn"></i> Opción multiple
                 </li>
-                <li class="list-group-item" id="add_lista">
-                    <i class="fa fa-plus" id="add_lista_btn"></i> Lista Desplegable
+                <li class="list-group-item" id="new_lista">
+                    <i class="fa fa-plus" id="new_lista_btn"></i> Lista Desplegable
                 </li>
             </ul>
             <div id="add_dialogo"></div>
+            <div id="dialogo"></div>
         </div>
-        <div class="card alert-info col-sm-8" style="height: 500px;overflow-y: scroll;" id="preview">
-            <div class="card-header"><h4>Vista Previa</h4></div>
+        <div class="card alert-info col-md-8" style="height: 500px;overflow-y: scroll;" id="preview">
+            <div class="card-header">
+                <h4>Vista Previa
+                    <button class="btn float-right" id="ver_formulario">
+                        <i class="fa fa-eye"></i>
+                    </button>
+                </h4>
+            </div>
             <div class="card-body row" id="form_body"><div>
         </div>
     </div>
